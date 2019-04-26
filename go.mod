@@ -1,4 +1,4 @@
-module github.com/hscells/cui2vec
+module github.com/jimmyoentung/cui2vec
 
 require (
 	github.com/alexflint/go-arg v0.0.0-20180516182405-f7c0423bd11e
