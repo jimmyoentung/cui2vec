@@ -56,7 +56,7 @@ func NewUncompressedEmbeddings(r io.Reader, skipFirst bool) (*UncompressedEmbedd
 
 func NewPrecomputedEmbeddings(r io.Reader) (*PrecomputedEmbeddings, error) {
 	v := &PrecomputedEmbeddings{
-		Cols: 20,
+		Cols: 50,
 	}
 	err := v.LoadModel(r)
 	return v, err

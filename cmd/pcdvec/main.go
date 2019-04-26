@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/alexflint/go-arg"
-	"github.com/hscells/cui2vec"
+	"github.com/jimmyoentung/cui2vec"
 	"io"
 	"math"
 	"os"
@@ -99,8 +99,8 @@ func distance(embeddings map[string][]float64) ([][]int, error) {
 			return concepts[i].Value > concepts[j].Value
 		})
 
-		// Take the top n concepts (in this case n=20; hardcoded).
-		n := 20
+		// Take the top n concepts (in this case n=50; hardcoded).
+		n := 50
 		if len(concepts) < n {
 			n = len(concepts)
 		}
@@ -173,7 +173,7 @@ func main() {
 	}
 	pe := cui2vec.PrecomputedEmbeddings{
 		Matrix: m,
-		Cols:   20,
+		Cols:   50,
 	}
 
 	// Output the pre-computed distances to file.

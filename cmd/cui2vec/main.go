@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/alexflint/go-arg"
 	"github.com/go-errors/errors"
-	"github.com/hscells/cui2vec"
+	"github.com/jimmyoentung/cui2vec"
 	"os"
 )
 
